@@ -1,5 +1,5 @@
 <h1><%= @character.name %></h1>
-<h3><a href="/characters/<%= @character.id %>/edit">(edit)</a> </h3>
+<h3><a href="/characters/<%= @character.id %>/edit">(Edit)</a> </h3> <h3><a href="/characters/<%= @character.id %>/destroy">(Delete)</a> </h3>
 <h2><%= @character.house.manor %></h2>
 <div class="character">
   <%= image_tag @character.img_url %>
