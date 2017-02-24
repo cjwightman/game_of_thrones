@@ -21,14 +21,14 @@ class CharactersController < ApplicationController
 
   def edit
     @character = Character.find(params[:id])
-    @character = Character.update(character_params)
+    @character.update(character_params)
     redirect_to character_path(@character)
 
   end
 
   def update
     @character = Character.find(params[:id])
-    @character.update(character_params)
+    @character = Character.update(character_params)
     redirect_to character_path(@character)
   end
 
