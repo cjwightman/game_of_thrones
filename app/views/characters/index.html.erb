@@ -1,6 +1,7 @@
-<h1>The ones likely to die</h1>
+<h1>The ones likely to die<a href="/characters/new">(+)</a></h1>
 <% @characters.each do |character| %>
   <div class="character">
     <%= link_to character.name, character_path(character) %> - <%= character.house.manor %>
+    <p><img src="<%= character.img_url %>"/></p>
   </div>
   <% end %>
