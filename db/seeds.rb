@@ -5,9 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-stark = House.create(manor: "Stark" )
-targaryan = House.create(manor: "Targaryan")
-lannister = House.create(manor: "Lannister")
+stark = House.create(manor: "Stark", img_url: "http://bit.ly/2lhyIEP" )
+targaryan = House.create(manor: "Targaryan", img_url: "http://bit.ly/2lNnTO1")
+lannister = House.create(manor: "Lannister", img_url: "http://bit.ly/2lhw2XQ")
 Character.create(name: "Eddard Stark", house: stark, img_url: "http://bit.ly/2lRLGfY")
 Character.create(name: "Robb Stark", house: stark, img_url: "http://bit.ly/2msMyEy")
 Character.create(name: "Tyrion Lannister", house: lannister, img_url: "http://bit.ly/2l7J4pN")

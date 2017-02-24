@@ -1,0 +1,6 @@
+<h1>The ones likely to die</h1>
+<% @characters.each do |character| %>
+  <div class="character">
+    <%= link_to character.name, character_path(character) %> - <%= character.house.manor %>
+  </div>
+  <% end %>
